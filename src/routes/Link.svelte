@@ -1,10 +1,11 @@
 <script>
+	import { Base64 } from 'js-base64';
 	export let params = {};
-    let data = params.d;
+    	let data = params.d;
 	let url = data.split(".")[0];
 	let uploader = data.split(".")[1];
-	let decrypted_url = atob(url);
-	let decrypted_uploader = atob(uploader);							
+	let decrypted_url = Base64.decode(url);
+	let decrypted_uploader = Base64.decode(uploader);							
 	
 </script>
 <head>
