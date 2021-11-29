@@ -1,15 +1,17 @@
 <script>	
-
+	import { Base64 } from 'js-base64';
 	let data = '';
 	let base64 = '';
 	let uploader = '';
 	let uploaderB64 = '';
 	function getBase64(){
-		base64 = btoa(data);
-		uploaderB64 = btoa(uploader);
+		base64 = Base64.encodeURI(data, {
+			urlsafe: true
+		});
+		uploaderB64 = Base64.encodeURI(uploader, {
+			urlsafe: true
+		});
 	}
-
-	let storedUploader = localStorage.getItem('uploader');
 	</script>
 	
 	<head>
