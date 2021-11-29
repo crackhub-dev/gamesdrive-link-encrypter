@@ -17,6 +17,7 @@
         "svelte": "^3.0.0"
     },
     "dependencies": {
+        "js-base64": "^3.7.2",
         "svelte-spa-router": "^3.0.4"
     }
 }
