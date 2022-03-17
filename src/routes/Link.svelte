@@ -21,7 +21,7 @@
 		{:else}
 		<h3>Link Provided by Gamesdrive</h3>
 	{/if}
-	<button class="btn btn-primary btn-lg" onclick="window.location.href = '{decrypted_url}'"><i class="bi bi-download"></i> Download</button>
+	<a href="{decrypted_url}"><button class="btn btn-primary btn-lg"><i class="bi bi-download"></i> Download</button></a>
 	<br>
 	<small>This link will take you to <b>{domain}</b></small>
 </div>
